@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Rock_Paper_scissors.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div id="score-board">
+        <h3 id="user-score">User score: 0 </h3>
+        <h3 id="comp-score">Computer score: 0 </h3>
+    </div>
+
+    <div id="container1">
+        <h1 id="Title">Rock Paper Scissor</h1>
+
+        <div id="button">
+            <button class="Weapon_rps" onclick="clicktoattack('rock')">
+                <i class="fa-solid fa-hand-back-fist fa-2x"></i>
+            </button>
+            <button class="Weapon_rps" onclick="clicktoattack('paper')">
+                <i class="fa-solid fa-hand fa-2x"></i>
+            </button>
+            <button class="Weapon_rps" onclick="clicktoattack('scissors')">
+                <i class="fa-solid fa-hand-scissors fa-2x"></i>
+            </button>
+        </div>
+
+        <button id="reset-btn" onclick="resetGame()">Reset Game</button>
+
+        <div id="cont_choice">
+            <h3 id="user-choice">User choice: -</h3>
+            <h3 id="comp-choice">Computer choice: -</h3>
+            <h3 id="result">Result: -</h3>
+        </div>
+    </div>
+
+    <script src="./Rock_Paper_scissors.js"></script>
+</body>
+</html>
